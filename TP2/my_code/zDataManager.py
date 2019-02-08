@@ -119,12 +119,12 @@ class DataManager(data_manager.DataManager):
     def DataStats(self, set_name):
     	''' Display simple data statistics.'''
     	DF = self.toDF(set_name)
-    	return 0 # Return something better
+    	return DF.describe() # Return something better
     	
     def DataHist(self, set_name):
         ''' Show histograms.'''
         DF = self.toDF(set_name)
-        return 0 # Return something better
+        return  # Return something better
     
     def ShowScatter(self, set_name):
         ''' Show scatter plots.'''
