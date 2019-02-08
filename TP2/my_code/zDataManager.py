@@ -118,7 +118,8 @@ class DataManager(data_manager.DataManager):
      
     def DataStats(self, set_name):
     	''' Display simple data statistics.'''
-    	DF = self.toDF(set_name)  # Return something better
+    	DF = self.toDF(set_name)  
+	return DF.describe() # Return something better
     	
     def DataHist(self, set_name):
         ''' Show histograms.'''
